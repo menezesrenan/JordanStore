@@ -89,7 +89,8 @@ input:focus {
 .header_container {
   width: 100%;
   height: 25rem;
-  background: url(/assets/images/image-michael-jordan.png); 
+  background: url(/assets/images/image-michael-jordan.png);
+  background-size: cover;
   flex-direction: column;
   /* top: 5.875rem; */
 
@@ -116,7 +117,6 @@ input:focus {
   width: 48px;
   height: 48px;
 }
-
 
 .header_title h3 {
   display: flex;
@@ -164,4 +164,142 @@ input:focus {
   font-size: 1.5rem;
   line-height: 2.1rem;
 }
+
 /* Main */
+
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+  position: relative;
+  margin: 0 2rem;
+}
+
+.div .heading {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  /* position: relative; */
+  /* flex: 0 0 auto; */
+}
+
+.div .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #121214;
+  font-size: 2rem;
+  text-align: center;
+  /* letter-spacing: 0; */
+  line-height: normal;
+  /* white-space: nowrap; */
+}
+
+.div .p {
+  position: relative;
+  width: 593px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #121214;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 33.6px;
+}
+
+.items {
+  display: flex;
+  max-width: 76rem;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 2.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+.items .card {
+  display: flex;
+  width: 24rem;
+  height: 20.5rem;
+  /* width: calc((100% - 4rem) / 3); */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  position: relative;
+  flex: 0 0 auto;
+  /* margin: 0 2.5rem; */
+}
+
+.items .imagem {
+  display: flex;
+  width: 24rem;
+  height: 12.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  position: relative;
+  width: 100%;
+  background-color: #f3f7ff;
+}
+
+.items .img {
+  position: relative;
+  width: 14rem;
+  height: 8.43rem;
+  object-fit: cover;
+}
+
+.items .detalhes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+  gap: 0.75rem;
+}
+
+.items .text-wrapper {
+  /* position: relative; */
+  width: 24rem;
+  margin-top: -1px;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #121214;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  line-height: 23.4px;
+  text-justify: auto;
+}
+
+.items .div {
+  position: relative;
+  width: fit-content;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #7ca1f4;
+  font-size: 1rem;
+  letter-spacing: 0;
+  /* padding: -5rem 0; */
+  line-height: normal;
+  /* white-space: nowrap;  */
+}
+
+.items .text-wrapper-2 {
+  /* position: relative; */
+  /* width: fit-content; */
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #121214;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: normal;
+}
