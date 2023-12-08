@@ -106,6 +106,7 @@ input:focus {
   position: absolute;
 }
 
+
 .header_title {
   display: flex;
   flex-direction: row;
@@ -142,7 +143,7 @@ input:focus {
 
 .header_information h1 {
   position: relative;
-  width: fit-content;
+  /* width: fit-content; */
   margin-top: -1px;
   font-family: Montserrat;
   font-weight: 500;
@@ -156,7 +157,7 @@ input:focus {
 
 .header_information p {
   position: relative;
-  width: 34.8125rem;
+  /* width: 34.8125rem; */
   font-family: MontSerrat;
   font-weight: 400;
   font-style: normal;
@@ -174,7 +175,7 @@ input:focus {
   align-items: center;
   gap: 4.5rem;
   position: relative;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
 }
 
 .div .heading {
@@ -183,9 +184,6 @@ input:focus {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-
-  /* position: relative; */
-  /* flex: 0 0 auto; */
 }
 
 .div .text-wrapper {
@@ -204,7 +202,8 @@ input:focus {
 
 .div .p {
   position: relative;
-  width: 593px;
+  max-width: 43rem;
+  width: fit-content;
   font-family: Montserrat;
   font-weight: 400;
   color: #121214;
@@ -226,14 +225,14 @@ input:focus {
 
 .items .card {
   display: flex;
-  width: 24rem;
-  height: 20.5rem;
+  /* width: 24rem; */
+  /* height: 20.5rem; */
   /* width: calc((100% - 4rem) / 3); */
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
-  position: relative;
-  flex: 0 0 auto;
+  /* position: relative; */
+  /* flex: 0 0 auto; */
   /* margin: 0 2.5rem; */
 }
 
@@ -268,7 +267,7 @@ input:focus {
 }
 
 .items .text-wrapper {
-  /* position: relative; */
+  position: relative;
   width: 24rem;
   margin-top: -1px;
   font-family: Montserrat;
@@ -288,9 +287,9 @@ input:focus {
   color: #7ca1f4;
   font-size: 1rem;
   letter-spacing: 0;
-  /* padding: -5rem 0; */
+  padding: -5rem 0;
   line-height: normal;
-  /* white-space: nowrap;  */
+  white-space: nowrap; 
 }
 
 .items .text-wrapper-2 {
@@ -303,3 +302,61 @@ input:focus {
   letter-spacing: 0;
   line-height: normal;
 }
+
+@media (max-width: 768px) {
+  /* Estilos específicos para Tablets e iPads */
+  .header_content {
+    position: absolute;
+    left: 2rem;
+    width: 40rem;
+  }
+  
+  .div {
+    display: flex;
+    width: 50rem;
+    margin: 0 2rem;
+    margin: 0 auto;
+
+  }
+  
+  .div .heading {
+    display: flex;
+    width: 50rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Estilos específicos para a Maioria dos Smartphones Móveis */
+  .header_content {
+    position: absolute;
+    right: 1.4375rem;
+    top: 10rem;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .header_information h1 {
+    font-size: 1.5rem;
+  }
+
+  .header_information P {
+    font-size: 1rem;
+    justify-content: justify;
+      /* width: 20rem; */
+  }
+
+  .div {
+    display: flex;
+    width: 30rem;
+    margin: 0 auto;
+  }
+  
+  .div .heading {
+    display: flex;
+    width: 32.5rem;
+  }
+}
+
